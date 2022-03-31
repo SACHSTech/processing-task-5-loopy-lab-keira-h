@@ -208,8 +208,8 @@ public class Sketch extends PApplet {
     int intY = 0;
 
     for(int intColumn = 0; intColumn < 30; intColumn++){
-      for(int intRow = (30-intColumn); intRow >= 0; intRow--){
-        intX = 603 + (intRow * 10); 
+      for(int intRow = (30 - intColumn); intRow > 0; intRow--){
+        intX = 593 + (intRow * 10); 
         intY = 0 + 3 + (intColumn * 10);
 
         fill(255);
@@ -217,19 +217,6 @@ public class Sketch extends PApplet {
         rect(intX, intY, 5, 5);
         }
       }
-    /*int intX = 0;
-    int intY = 0;
-
-    for(int intRow = 0; intRow <= 30; intRow++){
-      for(int intColumn = 1; intColumn <= (30 - intRow); intColumn++){
-        intX = 3 + (intRow * 10); 
-        intY = 0 + 3 + (intColumn * 10);
-
-        fill(255);
-        noStroke();
-        rect(intX, intY, 5, 5);
-        }
-      }*/
   }
   
   public void draw_section8(){
